@@ -5,7 +5,7 @@ import plotly.express as px
 
 '''1° Passo: Importar a base de dados'''
 tabela = pd.read_csv(
-    r"C:\Users\Vinicius\Desktop\Aula 2 - Intensivão de Python\telecom_users.csv")
+    'telecom_users.csv')
 
 '''2° Passo: Análise inicial dos dados'''
 # print(tabela)

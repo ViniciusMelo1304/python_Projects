@@ -52,8 +52,7 @@ navegador.quit()
 
 '''3° Passo: Importar a base de dados:'''
 
-tabela = pd.read_excel(
-    r"C:\Users\Vinicius\Desktop\Aula 3 - Intensivão de Python\Produtos.xlsx")
+tabela = pd.read_excel("Produtos.xlsx")
 # print(tabela)
 
 '''4° Passo: Atualizar a base de dados:'''
@@ -80,5 +79,5 @@ print(tabela)
 
 '''6° Passo: Exportar a base de dados:'''
 
-tabela.to_excel(r"C:\Users\Vinicius\Desktop\Aula 3 - Intensivão de Python\Produtos Novo.xlsx",
+tabela.to_excel("Produtos Novo.xlsx",
                 sheet_name="Nova DB", index=False)

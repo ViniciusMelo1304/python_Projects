@@ -15,8 +15,7 @@ Passo a Passo de um Projeto de Ciência de Dados
     - Passo 2: Entendimento da Área/Empresa
     A database da empresa mostra os investimentos em milhares de reais e aponta o faturamento em milhões de reais.
     - Passo 3: Extração/Obtenção de Dados   '''
-tabela = pd.read_csv(
-    r'C:\Users\Vinicius\Desktop\Aula 4 - Intensivão de Python\advertising.csv')
+tabela = pd.read_csv('advertising.csv')
 # print(tabela)
 ''' - Passo 4: Ajuste de Dados (Tratamento/Limpeza) '''
 # print(tabela.info()) # Aponta o tipo dos dados e quantos valores não-nulos tem em cada coluna
@@ -85,8 +84,7 @@ plt.show()
 print(tabela[["Radio", "Jornal"]].sum())
 
 ''' Passo 8: Deploy e verificação com a planilha dos próximos resultados'''
-novos_produtos = pd.read_csv(
-    r'C:\Users\Vinicius\Desktop\Aula 4 - Intensivão de Python\novos.csv')
+novos_produtos = pd.read_csv('novos.csv')
 
 previsao = arv_reg.predict(novos_produtos)
 print(previsao)
